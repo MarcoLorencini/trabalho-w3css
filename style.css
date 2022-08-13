@@ -1,0 +1,78 @@
+.color1 { color: #7a6949 };
+.color2 { color: #73b06f };
+.color3 { color: #fcf59b };
+.color4 { color: #91c494 };
+.color5 { color: #cc883a };
+
+*{
+    box-sizing: border-box;
+}
+
+/* HTML */
+html{
+    width: 102em;
+    margin:auto;
+}
+
+/* GRID */
+body{
+    display: grid;
+    grid-template-areas:
+        'header header header header header' 
+        'main main main main aside'
+        'footer footer footer footer footer';
+    background: #fcf5df url('assets/bkg.png');
+}
+
+/* HEADER */
+#cabecalho {
+    position: fixed;
+    z-index: 999;
+    grid-area: header;
+    width: 100%;
+    background-color: #da4c66;
+}
+
+/* SECTION */
+#sectionMain{
+    grid-area: main;
+    margin-top: 46px;
+}
+
+.w3-card-4{
+    background-color: #f1d4af;
+}
+
+.w3-display-bottomleft{
+    background-color: #febea3;
+}
+
+.w3-container .w3-button{
+    background-color: #febea3;
+}
+
+/* ASIDE */
+#publicidades{
+    grid-area: aside;
+    margin-top: 46px;
+    width: 24em;
+    background-color: #fcf5df;
+}
+
+/* FOOTER */
+#footer{
+    grid-area: footer;
+    background-color: #da4c66;
+}
+
+
+@media only screen and (max-width:600px){
+    #publicidades{
+        display: none;
+    }
+
+    #sectionMain{
+        margin: auto;
+        width:100%;
+    }
+}

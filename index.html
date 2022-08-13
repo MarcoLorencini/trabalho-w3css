@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locais de Alegre</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="cabecalho" >
+        <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-mobile"><img src="assets/image.png" alt="" style="height: 30px;"></a>
+            <a href="#local1" class="w3-bar-item w3-button w3-mobile">Cachoeira da Fumaça</a>
+            <a href="#local2" class="w3-bar-item w3-button w3-mobile">Antiga Estação Ferroviária</a>
+            <a href="#local3" class="w3-bar-item w3-button w3-mobile">Igreja Matriz Nossa Senhora da Penha</a>
+            <a href="#local4" class="w3-bar-item w3-button w3-mobile">Pracinha da Prefeitura Municipal de Alegre</a>
+            <a href="#local5" class="w3-bar-item w3-button w3-mobile">Solar Miguel Simão</a>
+        </div>
+    </header>
+
+    <!-- SECTION -->
+    <section id="sectionMain">
+        <div id="local1">
+            <div class="w3-content w3-display-container">
+
+                <div class="w3-display-container mySlides">
+                  <img src="assets/cahoeira.jpg" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                    Cachoeira da Fumaça
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides">
+                    <img src="assets/cahoeira2.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Cachoeira da Fumaça
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img src="assets/cachoeira3.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Cachoeira da Fumaça
+                    </div>
+                </div>
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                
+            </div>
+                
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+
+            <div class="w3-card-4" >
+
+                <header class="w3-container">
+                    <h1>Header</h1>
+                </header>
+                
+                <div class="w3-container">
+                <p>Lorem ipsum...</p>
+                </div>
+                
+                <footer class="w3-container">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Open Modal</button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('id01').style.display='none'" 
+                            class="w3-button w3-display-topright">&times;</span>
+                            <h2>Modal Header</h2>
+                        </header>
+                        <div class="w3-container">
+                            <p>Some text..</p>
+                            <p>Some text..</p>
+                        </div>
+                        <footer class="w3-container w3-teal">
+                            <p>Modal Footer</p>
+                        </footer>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+        </div>
+        <div id="local2">
+            <div class="w3-content w3-display-container">
+
+                <div class="w3-display-container mySlides2">
+                  <img src="assets/estacao.jpg" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                    Antiga Estação Ferroviária
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides2">
+                    <img src="assets/estacao2.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Antiga Estação Ferroviária
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides2">
+                    <img src="assets/estacao3.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Antiga Estação Ferroviária
+                    </div>
+                </div>
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs2(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs2(1)">&#10095;</button>
+                
+            </div>
+                
+            <script>
+                var slideIndex = 1;
+                showDivs2(slideIndex);
+                
+                function plusDivs2(n) {
+                    showDivs2(slideIndex += n);
+                }
+                
+                function showDivs2(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides2");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+
+            <div class="w3-card-4">
+
+                <header class="w3-container">
+                    <h1>Header</h1>
+                </header>
+                
+                <div class="w3-container">
+                <p>Lorem ipsum...</p>
+                </div>
+                
+                <footer class="w3-container">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Open Modal</button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('id01').style.display='none'" 
+                            class="w3-button w3-display-topright">&times;</span>
+                            <h2>Modal Header</h2>
+                        </header>
+                        <div class="w3-container">
+                            <p>Some text..</p>
+                            <p>Some text..</p>
+                        </div>
+                        <footer class="w3-container w3-teal">
+                            <p>Modal Footer</p>
+                        </footer>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+        </div>
+        <div id="local3">
+            <div class="w3-content w3-display-container">
+
+                <div class="w3-display-container mySlides3">
+                  <img src="assets/igreja.jpg" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                    Igreja Matriz Nossa Senhora da Penha
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides3">
+                    <img src="assets/igreja2.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Igreja Matriz Nossa Senhora da Penha
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides3">
+                    <img src="assets/igreja3.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Igreja Matriz Nossa Senhora da Penha
+                    </div>
+                </div>
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs3(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs3(1)">&#10095;</button>
+                
+            </div>
+                
+            <script>
+                var slideIndex = 1;
+                showDivs3(slideIndex);
+                
+                function plusDivs3(n) {
+                    showDivs3(slideIndex += n);
+                }
+                
+                function showDivs3(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides3");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+
+            <div class="w3-card-4">
+
+                <header class="w3-container">
+                    <h1>Header</h1>
+                </header>
+                
+                <div class="w3-container">
+                <p>Lorem ipsum...</p>
+                </div>
+                
+                <footer class="w3-container">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Open Modal</button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('id01').style.display='none'" 
+                            class="w3-button w3-display-topright">&times;</span>
+                            <h2>Modal Header</h2>
+                        </header>
+                        <div class="w3-container">
+                            <p>Some text..</p>
+                            <p>Some text..</p>
+                        </div>
+                        <footer class="w3-container w3-teal">
+                            <p>Modal Footer</p>
+                        </footer>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+        </div>
+        <div id="local4">
+            <div class="w3-content w3-display-container">
+
+                <div class="w3-display-container mySlides4">
+                  <img src="assets/pma.jpg" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                    Pracinha da Prefeitura Municipal de Alegre
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides4">
+                    <img src="assets/pma2.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Pracinha da Prefeitura Municipal de Alegre
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides4">
+                    <img src="assets/pma3.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Pracinha da Prefeitura Municipal de Alegre
+                    </div>
+                </div>
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs4(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs4(1)">&#10095;</button>
+                
+            </div>
+                
+            <script>
+                var slideIndex = 1;
+                showDivs4(slideIndex);
+                
+                function plusDivs4(n) {
+                    showDivs4(slideIndex += n);
+                }
+                
+                function showDivs4(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides4");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+
+            <div class="w3-card-4">
+
+                <header class="w3-container">
+                    <h1>Header</h1>
+                </header>
+                
+                <div class="w3-container">
+                <p>Lorem ipsum...</p>
+                </div>
+                
+                <footer class="w3-container">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Open Modal</button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('id01').style.display='none'" 
+                            class="w3-button w3-display-topright">&times;</span>
+                            <h2>Modal Header</h2>
+                        </header>
+                        <div class="w3-container">
+                            <p>Some text..</p>
+                            <p>Some text..</p>
+                        </div>
+                        <footer class="w3-container w3-teal">
+                            <p>Modal Footer</p>
+                        </footer>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+        </div>
+        <div id="local5">
+            <div class="w3-content w3-display-container">
+
+                <div class="w3-display-container mySlides5">
+                  <img src="assets/solar.jpg" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                    Solar Miguel Simão
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides5">
+                    <img src="assets/solar2.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Solar Miguel Simão
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides5">
+                    <img src="assets/solar3.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 ">
+                        Solar Miguel Simão
+                    </div>
+                </div>
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs5(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs5(1)">&#10095;</button>
+                
+            </div>
+                
+            <script>
+                var slideIndex = 1;
+                showDivs5(slideIndex);
+                
+                function plusDivs5(n) {
+                    showDivs5(slideIndex += n);
+                }
+                
+                function showDivs5(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides5");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+
+            <div class="w3-card-4">
+
+                <header class="w3-container">
+                    <h1>Header</h1>
+                </header>
+                
+                <div class="w3-container">
+                <p>Lorem ipsum...</p>
+                </div>
+                
+                <footer class="w3-container">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button ">Open Modal</button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('id01').style.display='none'" 
+                            class="w3-button w3-display-topright">&times;</span>
+                            <h2>Modal Header</h2>
+                        </header>
+                        <div class="w3-container">
+                            <p>Some text..</p>
+                            <p>Some text..</p>
+                        </div>
+                        <footer class="w3-container w3-teal">
+                            <p>Modal Footer</p>
+                        </footer>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ASIDE -->
+    <aside id="publicidades">
+        <div class="w3-card-4">
+
+            <header class="w3-container">
+                <h1>Header</h1>
+            </header>
+            
+            <div class="w3-container">
+            <p>Lorem ipsum...</p>
+            </div>
+            
+            <footer class="w3-container">
+            </footer>
+            
+        </div>
+        <div class="w3-card-4">
+
+            <header class="w3-container">
+                <h1>Header</h1>
+            </header>
+            
+            <div class="w3-container">
+            <p>Lorem ipsum...</p>
+            </div>
+            
+            <footer class="w3-container">
+            </footer>
+            
+        </div>
+        <div class="w3-card-4">
+
+            <header class="w3-container">
+                <h1>Header</h1>
+            </header>
+            
+            <div class="w3-container">
+            <p>Lorem ipsum...</p>
+            </div>
+            
+            <footer class="w3-container">
+            </footer>
+            
+        </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p>Built with love &#128153;</p>
+        <p>&copy; Malu & Marco, 2022 </p>
+    </footer>
+
+</body>
+</html>
